@@ -17,4 +17,4 @@ Project is created with:
 ## Setup
 To run this project, import this project to your Eclipse.
 Change the driverPath, reportConfigPath in Configuration.Properties file according to your settings.
-Update the unique Email ID for Examples test data in automationPractice.feature file.
+Update the Email ID for Examples test data in automationPractice.feature file.
