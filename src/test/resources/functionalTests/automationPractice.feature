@@ -30,8 +30,5 @@ Scenario Outline: As a new customer, I want to able to create an account on Auto
 		  And logout from the application
 		  Examples:
 		 |email address|title|first name|sur name|password|address|city|state|zip|country|mobile phone|address alias|
-		 |tesx31@xyz.com|mr|firstxa|lastxa|Pawd1|x1 lane|salt lake|Ohio|84044|United States|9874563210|X1list|
-		 |tesx32@xyz.com|mr|firstxa|lastxa|Pawd1|x1 lane|salt lake|Ohio|84044|United States|9874563210|X1list|
-		 |tesx33@xyz.com|mr|firstxa|lastxa|Pawd1|x1 lane|salt lake|Ohio|84044|United States|9874563210|X1list|
-		 |tesx34@xyz.com|mr|firstxa|lastxa|Pawd1|x1 lane|salt lake|Ohio|84044|United States|9874563210|X1list|
-		 |tesx35@xyz.com|mr|firstxa|lastxa|Pawd1|x1 lane|salt lake|Ohio|84044|United States|9874563210|X1list|
+		 |tesa51@xyz.com|mr|firstxa|lastxa|Pawd1|x1 lane|salt lake|Ohio|84044|United States|9874563210|X1list|
+		 |tesa52@xyz.com|mr|firstxa|lastxa|Pawd1|x1 lane|salt lake|Ohio|84044|United States|9874563210|X1list|

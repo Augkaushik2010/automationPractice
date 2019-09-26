@@ -19,9 +19,18 @@ public class SignInPage {
 	private static WebElement txtEmailAddress;
 	@FindBy(how=How.XPATH,using = "//*[@name='SubmitCreate' and @id='SubmitCreate']")
 	private static WebElement btnCreateAccount;
+	@FindBy(how = How.XPATH, using = "//ol[1]//li[1]")
+	private static WebElement errDescription;
 	
 	public void enterEmailAddress(String arg1) {
-		txtEmailAddress.sendKeys(arg1);
+		String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"+"0123456789";
+		StringBuilder sb = new StringBuilder(4);
+		for (int i = 0; i < 4; i++) { 
+            int index = (int)(AlphaNumericString.length()* Math.random()); 
+            sb.append(AlphaNumericString.charAt(index)); 
+        } 
+		String prefixAdd = sb.toString();
+		txtEmailAddress.sendKeys(prefixAdd+arg1);
 	}
 	public void clkOnCreateAccountBtn() {
 		btnCreateAccount.click();

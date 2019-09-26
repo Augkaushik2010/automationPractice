@@ -17,13 +17,9 @@ public class SignInPageSteps {
 	
 	@When("^user enter \"([^\"]*)\" and click on create an account button$")
 	public void user_enter_and_click_on_create_an_account_button(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-		//arg1 = FileReaderManager.getInstance().getConfigReader().getEmailAddress();
-		System.out.println(arg1);
 		signinPage.enterEmailAddress(arg1);
-		
 		signinPage.clkOnCreateAccountBtn();
-	    //throw new PendingException();
+	    
 	}
 	
 	
