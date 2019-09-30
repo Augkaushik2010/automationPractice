@@ -4,7 +4,7 @@ import cucumber.api.java.en.Given;
 import cucumber.TestContext;
 import pageObjects.HomePage;
 
-
+//this class will take user to the sign on page.
 public class HomePageSteps {
 	 TestContext testContext;
 	 HomePage homePage;
