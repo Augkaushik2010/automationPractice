@@ -13,11 +13,9 @@ public class HomePageSteps {
 		 homePage = testContext.getPageObjectManager().getHomePage();
 	}
 	@Given("^user is on Signon page$")
-	public void user_is_on_Signon_page() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+	public void user_is_on_Signon_page() {
 		homePage.navigateTo_HomePage();
 		homePage.clkOnSignInlink();
-	    //throw new PendingException();
 	}
 	
 }

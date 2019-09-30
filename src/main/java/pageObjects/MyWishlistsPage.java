@@ -6,18 +6,22 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 public class MyWishlistsPage {
 	WebDriver driver;
-	//ConfigFileReader configFileReader;
+	
 	
 	public MyWishlistsPage(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		//configFileReader= new ConfigFileReader();
 	}
+	
+	//My wishlists page - Top sellers link object
 	@FindBy(how = How.XPATH, using = "//*[text()='Top sellers']")
 	private static WebElement listTopSellers;
+	
+	//My wishlists page - first item from Top sellers object
 	@FindBy(how = How.XPATH, using = "//*[@id='best-sellers_block_right']//li[1]//a[@class='product-name']")
 	private static WebElement frstItemInTopSellers;
 	
+	//The below method verifies top sellers list displayed in the page and returns true/false
 	public boolean verifyTopSellersListDisplayed(String arg1) {
 		String dispText = listTopSellers.getText();
 		if(dispText.equalsIgnoreCase(arg1)) {
@@ -30,6 +34,7 @@ public class MyWishlistsPage {
 		}
 	}
 	
+	//The below method clicks on the first item displayed under top sellers list
 	public void clkOnFirstItemInTopSellers() {
 		frstItemInTopSellers.click();
 	}

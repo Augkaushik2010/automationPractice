@@ -7,16 +7,16 @@ public class TestContext {
  private PageObjectManager pageObjectManager;
  
  public TestContext(){
- webDriverManager = new WebDriverManager();
- pageObjectManager = new PageObjectManager(webDriverManager.getDriver());
+	 webDriverManager = new WebDriverManager();
+	 pageObjectManager = new PageObjectManager(webDriverManager.getDriver());
  }
  
  public WebDriverManager getWebDriverManager() {
- return webDriverManager;
+	 return webDriverManager;
  }
  
  public PageObjectManager getPageObjectManager() {
- return pageObjectManager;
+	 return pageObjectManager;
  }
  
 }
