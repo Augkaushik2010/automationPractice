@@ -12,7 +12,7 @@ public class SpecificItemPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	//First item from top sellers list page - wish  list button.
+	//First item from top sellers list page - wish  list button
 	@FindBy(how = How.XPATH, using = "//span[text()='Add to cart']//following::a[@id='wishlist_button']")
 	private static WebElement wishlstButton;
 	//First item from top sellers list page - Added to your list text box object
